@@ -1,2 +1,2 @@
-# chapter-iterating-data-with-r
-Chapter: Iterating data with R.
+# chapter-defining-functions-with-r
+Chapter: Defining functions with R.

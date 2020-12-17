@@ -13202,7 +13202,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="R-&#31243;&#24335;&#35373;&#35336;">R &#31243;&#24335;&#35373;&#35336;<a class="anchor-link" href="#R-&#31243;&#24335;&#35373;&#35336;">&#182;</a></h1><blockquote><p>迭代資料</p>
+<h1 id="R-&#31243;&#24335;&#35373;&#35336;">R &#31243;&#24335;&#35373;&#35336;<a class="anchor-link" href="#R-&#31243;&#24335;&#35373;&#35336;">&#182;</a></h1><blockquote><p>定義函式</p>
 </blockquote>
 <p>郭耀仁 <a href="mailto:yaojenkuo@datainpoint.com">yaojenkuo@datainpoint.com</a>，<a href="https://www.datainpoint.com/">數據交點</a></p>
 
@@ -13212,127 +13212,32 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>When you’ve given the same in-person advice 3 times, write a blog post.</p>
-<p>David Robinson</p>
+<blockquote><p>The way R works is pretty straightforward, you apply functions to objects.</p>
+<p>Greg Martain</p>
 </blockquote>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#24120;&#29992;&#30340;-R-&#20839;&#24314;&#20989;&#24335;">&#24120;&#29992;&#30340; R &#20839;&#24314;&#20989;&#24335;<a class="anchor-link" href="#&#24120;&#29992;&#30340;-R-&#20839;&#24314;&#20989;&#24335;">&#182;</a></h2>
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#36852;&#22280;">&#36852;&#22280;<a class="anchor-link" href="#&#36852;&#22280;">&#182;</a></h2><blockquote><p>迴圈是程式語言中用來解決需要反覆執行、大量手動複製貼上程式碼的語法結構。</p>
-</blockquote>
+<h2 id="&#20839;&#24314;&#25976;&#20540;&#20989;&#24335;">&#20839;&#24314;&#25976;&#20540;&#20989;&#24335;<a class="anchor-link" href="#&#20839;&#24314;&#25976;&#20540;&#20989;&#24335;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="abs()"><code>abs()</code><a class="anchor-link" href="#abs()">&#182;</a></h2><p>取絕對值。</p>
 
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#36852;&#22280;&#33021;&#22816;&#24171;&#25105;&#20497;&#23559;&#36039;&#26009;&#32080;&#27083;&#20013;&#30340;&#36039;&#26009;&#19968;&#31558;&#19968;&#31558;&#21462;&#20986;&#20358;">&#36852;&#22280;&#33021;&#22816;&#24171;&#25105;&#20497;&#23559;&#36039;&#26009;&#32080;&#27083;&#20013;&#30340;&#36039;&#26009;&#19968;&#31558;&#19968;&#31558;&#21462;&#20986;&#20358;<a class="anchor-link" href="#&#36852;&#22280;&#33021;&#22816;&#24171;&#25105;&#20497;&#23559;&#36039;&#26009;&#32080;&#27083;&#20013;&#30340;&#36039;&#26009;&#19968;&#31558;&#19968;&#31558;&#21462;&#20986;&#20358;">&#182;</a></h2><ul>
-<li><code>while</code> 迴圈</li>
-<li><code>for</code> 迴圈</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#32068;&#25104;&#36852;&#22280;&#30340;&#19977;&#20491;&#35201;&#20214;">&#32068;&#25104;&#36852;&#22280;&#30340;&#19977;&#20491;&#35201;&#20214;<a class="anchor-link" href="#&#32068;&#25104;&#36852;&#22280;&#30340;&#19977;&#20491;&#35201;&#20214;">&#182;</a></h2><ul>
-<li>起始值（start）：迭代資料的起點在哪裡？</li>
-<li>終止值（stop）：迭代資料的終點在哪裡？</li>
-<li>間隔（step）：從起點移動到終點的步幅為多少？</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="while-&#36852;&#22280;&#30340;&#31243;&#24335;&#21312;&#22602;"><code>while</code> &#36852;&#22280;&#30340;&#31243;&#24335;&#21312;&#22602;<a class="anchor-link" href="#while-&#36852;&#22280;&#30340;&#31243;&#24335;&#21312;&#22602;">&#182;</a></h2><ul>
-<li>保留字 <code>while</code></li>
-<li>起始值（start）</li>
-<li>終止值（stop）：被評估為邏輯值向量的敘述 <code>EXPR</code></li>
-<li>間隔（step）</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">&lt;-</span> <span class="n">start</span> <span class="c1"># start</span>
-<span class="nf">while </span><span class="p">(</span><span class="n">EXPR</span><span class="p">)</span> <span class="p">{</span>  <span class="c1"># stop</span>
-  <span class="c1"># Codes written here will be ran repeatedly</span>
-  <span class="c1"># until EXPR is evaluated as FALSE</span>
-  <span class="n">i</span> <span class="o">&lt;-</span> <span class="n">i</span> <span class="o">+</span> <span class="n">step</span> <span class="c1"># step</span>
-<span class="p">}</span>
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="for-&#36852;&#22280;&#30340;&#31243;&#24335;&#21312;&#22602;"><code>for</code> &#36852;&#22280;&#30340;&#31243;&#24335;&#21312;&#22602;<a class="anchor-link" href="#for-&#36852;&#22280;&#30340;&#31243;&#24335;&#21312;&#22602;">&#182;</a></h2><ul>
-<li>保留字 <code>for</code> 與 <code>in</code></li>
-<li>ITERATOR 迭代子</li>
-<li>ITERABLE 可迭代的物件（指派了 start、stop 與 step）</li>
-<li>重複任務</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">ITERABLE</span><span class="p">)</span> <span class="p">{</span> <span class="c1"># start/stop/step</span>
-  <span class="c1"># Codes written here will be ran repeatedly</span>
-  <span class="c1"># until i reaches the end of ITERABLE</span>
-<span class="p">}</span>
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#24120;&#35211;&#30340;&#36852;&#22280;&#20219;&#21209;">&#24120;&#35211;&#30340;&#36852;&#22280;&#20219;&#21209;<a class="anchor-link" href="#&#24120;&#35211;&#30340;&#36852;&#22280;&#20219;&#21209;">&#182;</a></h2><ul>
-<li><code>print()</code></li>
-<li>加總（Summation）</li>
-<li>計數（Counter）</li>
-<li>乘積（Product）</li>
-<li>合併（Combine）</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22196;&#26684;&#35498;&#20358;&#65292;&#22914;&#26524;&#25105;&#20497;&#38754;&#23565;&#30340;&#26159;&#21521;&#37327;&#65292;&#22810;&#25976;&#30340;&#20219;&#21209;&#19981;&#38656;&#35201;&#25776;&#23531;&#36852;&#22280;">&#22196;&#26684;&#35498;&#20358;&#65292;&#22914;&#26524;&#25105;&#20497;&#38754;&#23565;&#30340;&#26159;&#21521;&#37327;&#65292;&#22810;&#25976;&#30340;&#20219;&#21209;&#19981;&#38656;&#35201;&#25776;&#23531;&#36852;&#22280;<a class="anchor-link" href="#&#22196;&#26684;&#35498;&#20358;&#65292;&#22914;&#26524;&#25105;&#20497;&#38754;&#23565;&#30340;&#26159;&#21521;&#37327;&#65292;&#22810;&#25976;&#30340;&#20219;&#21209;&#19981;&#38656;&#35201;&#25776;&#23531;&#36852;&#22280;">&#182;</a></h2><ul>
-<li>加總（Summation）</li>
-<li>計數（Counter）</li>
-<li>乘積（Product）</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#38754;&#23565;&#21521;&#37327;&#65292;&#25105;&#20497;&#23563;&#25214;&#30340;&#26159;&#20989;&#24335;">&#38754;&#23565;&#21521;&#37327;&#65292;&#25105;&#20497;&#23563;&#25214;&#30340;&#26159;&#20989;&#24335;<a class="anchor-link" href="#&#38754;&#23565;&#21521;&#37327;&#65292;&#25105;&#20497;&#23563;&#25214;&#30340;&#26159;&#20989;&#24335;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13341,9 +13246,8 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># 加總（Summation）</span>
-<span class="n">vec</span> <span class="o">&lt;-</span> <span class="m">6</span><span class="o">:</span><span class="m">10</span>
-<span class="nf">sum</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">abs</span><span class="p">(</span><span class="m">-5566</span><span class="p">)</span>
+<span class="nf">abs</span><span class="p">(</span><span class="m">5566</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13361,7 +13265,19 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-40
+5566
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+5566
 </div>
 
 </div>
@@ -13369,15 +13285,484 @@ a.anchor-link {
 </div>
 </div>
 
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="sqrt()"><code>sqrt()</code><a class="anchor-link" href="#sqrt()">&#182;</a></h2><p>取平方根。</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># 計數（Counter）</span>
-<span class="n">vec</span> <span class="o">&lt;-</span> <span class="m">6</span><span class="o">:</span><span class="m">10</span>
-<span class="nf">length</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">sqrt</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
+<span class="nf">sqrt</span><span class="p">(</span><span class="m">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1.4142135623731
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1.73205080756888
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="ceiling()"><code>ceiling()</code><a class="anchor-link" href="#ceiling()">&#182;</a></h2><p>無條件進位。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">ceiling</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="m">2</span><span class="p">))</span>
+<span class="nf">ceiling</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="m">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="floor()"><code>floor()</code><a class="anchor-link" href="#floor()">&#182;</a></h2><p>無條件捨去。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">floor</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="m">2</span><span class="p">))</span>
+<span class="nf">floor</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="m">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="round()"><code>round()</code><a class="anchor-link" href="#round()">&#182;</a></h2><p>四捨五入。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">round</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="m">2</span><span class="p">))</span>
+<span class="nf">round</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="m">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="exp()"><code>exp()</code><a class="anchor-link" href="#exp()">&#182;</a></h2><p>指數函式。</p>
+\begin{equation}
+exp(x) = e^x \\
+\text{where } e = 2.71828...
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">exp</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
+<span class="nf">exp</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2.71828182845905
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+7.38905609893065
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="log()"><code>log()</code><a class="anchor-link" href="#log()">&#182;</a></h2><p>以 $e$ 為底的對數函式。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="nf">exp</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
+<span class="n">ee</span> <span class="o">=</span> <span class="nf">exp</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
+<span class="nf">log</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="nf">log</span><span class="p">(</span><span class="n">ee</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="log10()"><code>log10()</code><a class="anchor-link" href="#log10()">&#182;</a></h2><p>以 10 為底的對數函式。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">log10</span><span class="p">(</span><span class="m">10</span><span class="p">)</span>
+<span class="nf">log10</span><span class="p">(</span><span class="m">10</span><span class="o">**</span><span class="m">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20839;&#24314;&#25551;&#36848;&#24615;&#32113;&#35336;&#20989;&#24335;">&#20839;&#24314;&#25551;&#36848;&#24615;&#32113;&#35336;&#20989;&#24335;<a class="anchor-link" href="#&#20839;&#24314;&#25551;&#36848;&#24615;&#32113;&#35336;&#20989;&#24335;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="mean()"><code>mean()</code><a class="anchor-link" href="#mean()">&#182;</a></h2><p>平均數</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">mean</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+5.5
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="sd()"><code>sd()</code><a class="anchor-link" href="#sd()">&#182;</a></h2><p>標準差。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">sd</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+3.02765035409749
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="median()"><code>median()</code><a class="anchor-link" href="#median()">&#182;</a></h2><p>中位數。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">median</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">9</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13403,15 +13788,21 @@ a.anchor-link {
 </div>
 </div>
 
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="range()"><code>range()</code><a class="anchor-link" href="#range()">&#182;</a></h2><p>最大值與最小值。</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># 乘積（Product）</span>
-<span class="n">vec</span> <span class="o">&lt;-</span> <span class="m">6</span><span class="o">:</span><span class="m">10</span>
-<span class="nf">prod</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">range</span><span class="p">(</span><span class="m">11</span><span class="o">:</span><span class="m">100</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13429,7 +13820,13 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-30240
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>11</li><li>100</li></ol>
+
 </div>
 
 </div>
@@ -13441,32 +13838,17 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22810;&#25976;&#30340;&#24773;&#27841;&#19979;&#65292;&#38656;&#35201;&#25105;&#20497;&#21435;&#36845;&#20195;&#30340;&#23565;&#35937;&#26159;">&#22810;&#25976;&#30340;&#24773;&#27841;&#19979;&#65292;&#38656;&#35201;&#25105;&#20497;&#21435;&#36845;&#20195;&#30340;&#23565;&#35937;&#26159;<a class="anchor-link" href="#&#22810;&#25976;&#30340;&#24773;&#27841;&#19979;&#65292;&#38656;&#35201;&#25105;&#20497;&#21435;&#36845;&#20195;&#30340;&#23565;&#35937;&#26159;">&#182;</a></h2><ul>
-<li><code>list</code></li>
-<li><code>data.frame</code></li>
-</ul>
+<h2 id="sum()"><code>sum()</code><a class="anchor-link" href="#sum()">&#182;</a></h2><p>加總。</p>
 
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#20309;&#20197;-while-&#36845;&#20195;&#19968;&#20491;-list">&#22914;&#20309;&#20197; <code>while</code> &#36845;&#20195;&#19968;&#20491; <code>list</code><a class="anchor-link" href="#&#22914;&#20309;&#20197;-while-&#36845;&#20195;&#19968;&#20491;-list">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">a_list</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span><span class="m">6</span><span class="p">,</span> <span class="m">7</span><span class="p">,</span> <span class="m">8</span><span class="p">,</span> <span class="m">9</span><span class="p">,</span> <span class="m">10</span><span class="p">)</span>
-<span class="n">i</span> <span class="o">&lt;-</span> <span class="m">1</span>
-<span class="nf">while </span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="nf">length</span><span class="p">(</span><span class="n">a_list</span><span class="p">))</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[[</span><span class="n">i</span><span class="p">]])</span>
-    <span class="n">i</span> <span class="o">&lt;-</span> <span class="n">i</span> <span class="o">+</span> <span class="m">1</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">sum</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">100</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13482,14 +13864,11 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] 6
-[1] 7
-[1] 8
-[1] 9
-[1] 10
-</pre>
+
+<div class="output_html rendered_html output_subarea ">
+5050
 </div>
+
 </div>
 
 </div>
@@ -13499,19 +13878,17 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#20309;&#20197;-for-&#36845;&#20195;&#19968;&#20491;-list">&#22914;&#20309;&#20197; <code>for</code> &#36845;&#20195;&#19968;&#20491; <code>list</code><a class="anchor-link" href="#&#22914;&#20309;&#20197;-for-&#36845;&#20195;&#19968;&#20491;-list">&#182;</a></h2>
+<h2 id="max()"><code>max()</code><a class="anchor-link" href="#max()">&#182;</a></h2><p>最大值。</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">a_list</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span><span class="m">6</span><span class="p">,</span> <span class="m">7</span><span class="p">,</span> <span class="m">8</span><span class="p">,</span> <span class="m">9</span><span class="p">,</span> <span class="m">10</span><span class="p">)</span>
-<span class="nf">for </span><span class="p">(</span><span class="n">item</span> <span class="n">in</span> <span class="n">a_list</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">max</span><span class="p">(</span><span class="m">11</span><span class="o">:</span><span class="m">100</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13527,14 +13904,11 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] 6
-[1] 7
-[1] 8
-[1] 9
-[1] 10
-</pre>
+
+<div class="output_html rendered_html output_subarea ">
+100
 </div>
+
 </div>
 
 </div>
@@ -13544,37 +13918,267 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#20309;&#20197;-while-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#21015;&#65288;rows&#65289;">&#22914;&#20309;&#20197; <code>while</code> &#36845;&#20195;&#19968;&#20491; <code>data.frame</code> &#30340;&#21015;&#65288;rows&#65289;<a class="anchor-link" href="#&#22914;&#20309;&#20197;-while-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#21015;&#65288;rows&#65289;">&#182;</a></h2>
+<h2 id="min()"><code>min()</code><a class="anchor-link" href="#min()">&#182;</a></h2><p>最小值。</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">min</span><span class="p">(</span><span class="m">11</span><span class="o">:</span><span class="m">100</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+11
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20839;&#24314;&#25991;&#23383;&#34389;&#29702;&#20989;&#24335;">&#20839;&#24314;&#25991;&#23383;&#34389;&#29702;&#20989;&#24335;<a class="anchor-link" href="#&#20839;&#24314;&#25991;&#23383;&#34389;&#29702;&#20989;&#24335;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="unique()"><code>unique()</code><a class="anchor-link" href="#unique()">&#182;</a></h2><p>取獨一值。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">cities</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;New York&quot;</span><span class="p">,</span> <span class="s">&quot;Boston&quot;</span><span class="p">,</span> <span class="s">&quot;Tokyo&quot;</span><span class="p">,</span> <span class="s">&quot;Kyoto&quot;</span><span class="p">,</span> <span class="s">&quot;Taipei&quot;</span><span class="p">)</span>
+<span class="n">countries</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;United States&quot;</span><span class="p">,</span> <span class="s">&quot;United States&quot;</span><span class="p">,</span> <span class="s">&quot;Japan&quot;</span><span class="p">,</span> <span class="s">&quot;Japan&quot;</span><span class="p">,</span> <span class="s">&quot;Taiwan&quot;</span><span class="p">)</span>
+<span class="nf">unique</span><span class="p">(</span><span class="n">cities</span><span class="p">)</span>
+<span class="nf">unique</span><span class="p">(</span><span class="n">countries</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'New York'</li><li>'Boston'</li><li>'Tokyo'</li><li>'Kyoto'</li><li>'Taipei'</li></ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'United States'</li><li>'Japan'</li><li>'Taiwan'</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="toupper()"><code>toupper()</code><a class="anchor-link" href="#toupper()">&#182;</a></h2><p>轉換為大寫。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">toupper</span><span class="p">(</span><span class="s">&quot;Luke, use the Force!&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'LUKE, USE THE FORCE!'
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="tolower()"><code>tolower()</code><a class="anchor-link" href="#tolower()">&#182;</a></h2><p>轉換為小寫。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">tolower</span><span class="p">(</span><span class="s">&quot;Luke, use the Force!&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'luke, use the force!'
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="substr()"><code>substr()</code><a class="anchor-link" href="#substr()">&#182;</a></h2><p>擷取部分字串。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">luke</span> <span class="o">&lt;-</span> <span class="s">&quot;Luke, use the Force!&quot;</span>
+<span class="nf">substr</span><span class="p">(</span><span class="n">luke</span><span class="p">,</span> <span class="n">start</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">stop</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
+<span class="nf">substr</span><span class="p">(</span><span class="n">luke</span><span class="p">,</span> <span class="n">start</span> <span class="o">=</span> <span class="m">11</span><span class="p">,</span> <span class="n">stop</span> <span class="o">=</span> <span class="nf">nchar</span><span class="p">(</span><span class="n">luke</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'Luke'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'the Force!'
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="grep()"><code>grep()</code><a class="anchor-link" href="#grep()">&#182;</a></h2><p>回傳指定特徵有出現的索引值。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">)</span>
-<span class="n">ratings</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">8.0</span><span class="p">,</span> <span class="m">7.3</span><span class="p">,</span> <span class="m">8.4</span><span class="p">,</span> <span class="m">8.4</span><span class="p">)</span>
-<span class="n">release_year</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">2012</span><span class="p">,</span> <span class="m">2015</span><span class="p">,</span> <span class="m">2018</span><span class="p">,</span> <span class="m">2019</span><span class="p">)</span>
-<span class="n">is_good</span> <span class="o">&lt;-</span> <span class="n">ratings</span> <span class="o">&gt;=</span> <span class="m">8</span>
-<span class="n">avengers_df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="n">avengers</span><span class="p">,</span> <span class="n">rating</span> <span class="o">=</span> <span class="n">ratings</span><span class="p">,</span> <span class="n">release_year</span><span class="p">,</span> <span class="n">is_good</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">i</span> <span class="o">&lt;-</span> <span class="m">1</span>
-<span class="nf">while </span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">))</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">])</span>
-    <span class="n">i</span> <span class="o">&lt;-</span> <span class="n">i</span> <span class="o">+</span> <span class="m">1</span>
-<span class="p">}</span>
+<span class="nf">grep</span><span class="p">(</span><span class="n">pattern</span> <span class="o">=</span> <span class="s">&quot;Avengers&quot;</span><span class="p">,</span> <span class="n">avengers</span><span class="p">)</span>
+<span class="nf">grep</span><span class="p">(</span><span class="n">pattern</span> <span class="o">=</span> <span class="s">&quot;Endgame&quot;</span><span class="p">,</span> <span class="n">avengers</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13590,17 +14194,29 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>         title rating release_year is_good
-1 The Avengers      8         2012    TRUE
-                    title rating release_year is_good
-2 Avengers: Age of Ultron    7.3         2015   FALSE
-                   title rating release_year is_good
-3 Avengers: Infinity War    8.4         2018    TRUE
-              title rating release_year is_good
-4 Avengers: Endgame    8.4         2019    TRUE
-</pre>
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>1</li><li>2</li><li>3</li><li>4</li></ol>
+
 </div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+4
+</div>
+
 </div>
 
 </div>
@@ -13610,20 +14226,18 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#20309;&#20197;-while-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#27396;&#65288;columns&#65289;">&#22914;&#20309;&#20197; <code>while</code> &#36845;&#20195;&#19968;&#20491; <code>data.frame</code> &#30340;&#27396;&#65288;columns&#65289;<a class="anchor-link" href="#&#22914;&#20309;&#20197;-while-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#27396;&#65288;columns&#65289;">&#182;</a></h2>
+<h2 id="sub()"><code>sub()</code><a class="anchor-link" href="#sub()">&#182;</a></h2><p>取代指定特徵。</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">i</span> <span class="o">&lt;-</span> <span class="m">1</span>
-<span class="nf">while </span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="nf">ncol</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">))</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">[,</span> <span class="n">i</span><span class="p">])</span>
-    <span class="n">i</span> <span class="o">&lt;-</span> <span class="n">i</span> <span class="o">+</span> <span class="m">1</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">skywalker</span> <span class="o">&lt;-</span> <span class="s">&quot;Anakin Skywalker&quot;</span>
+<span class="nf">sub</span><span class="p">(</span><span class="n">pattern</span> <span class="o">=</span> <span class="s">&quot;Anakin&quot;</span><span class="p">,</span> <span class="n">replacement</span> <span class="o">=</span> <span class="s">&quot;Luke&quot;</span><span class="p">,</span> <span class="n">skywalker</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13639,14 +14253,11 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] &#34;The Avengers&#34;            &#34;Avengers: Age of Ultron&#34;
-[3] &#34;Avengers: Infinity War&#34;  &#34;Avengers: Endgame&#34;      
-[1] 8.0 7.3 8.4 8.4
-[1] 2012 2015 2018 2019
-[1]  TRUE FALSE  TRUE  TRUE
-</pre>
+
+<div class="output_html rendered_html output_subarea ">
+'Luke Skywalker'
 </div>
+
 </div>
 
 </div>
@@ -13656,18 +14267,19 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#20309;&#20197;-for-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#21015;">&#22914;&#20309;&#20197; <code>for</code> &#36845;&#20195;&#19968;&#20491; <code>data.frame</code> &#30340;&#21015;<a class="anchor-link" href="#&#22914;&#20309;&#20197;-for-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#21015;">&#182;</a></h2>
+<h2 id="strsplit()"><code>strsplit()</code><a class="anchor-link" href="#strsplit()">&#182;</a></h2><p>依據指定特徵分割文字。</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">nrow</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">))</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">])</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">)</span>
+<span class="nf">strsplit</span><span class="p">(</span><span class="n">avengers</span><span class="p">,</span> <span class="n">split</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+<span class="nf">strsplit</span><span class="p">(</span><span class="n">avengers</span><span class="p">,</span> <span class="n">split</span> <span class="o">=</span> <span class="s">&quot;:&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13683,17 +14295,77 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>         title rating release_year is_good
-1 The Avengers      8         2012    TRUE
-                    title rating release_year is_good
-2 Avengers: Age of Ultron    7.3         2015   FALSE
-                   title rating release_year is_good
-3 Avengers: Infinity War    8.4         2018    TRUE
-              title rating release_year is_good
-4 Avengers: Endgame    8.4         2019    TRUE
-</pre>
+
+<div class="output_html rendered_html output_subarea ">
+<ol>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'The'</li><li>'Avengers'</li></ol>
+</li>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Avengers:'</li><li>'Age'</li><li>'of'</li><li>'Ultron'</li></ol>
+</li>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Avengers:'</li><li>'Infinity'</li><li>'War'</li></ol>
+</li>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Avengers:'</li><li>'Endgame'</li></ol>
+</li>
+</ol>
+
 </div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol>
+	<li>'The Avengers'</li>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Avengers'</li><li>' Age of Ultron'</li></ol>
+</li>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Avengers'</li><li>' Infinity War'</li></ol>
+</li>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Avengers'</li><li>' Endgame'</li></ol>
+</li>
+</ol>
+
+</div>
+
 </div>
 
 </div>
@@ -13703,18 +14375,18 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#20309;&#20197;-for-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#27396;">&#22914;&#20309;&#20197; <code>for</code> &#36845;&#20195;&#19968;&#20491; <code>data.frame</code> &#30340;&#27396;<a class="anchor-link" href="#&#22914;&#20309;&#20197;-for-&#36845;&#20195;&#19968;&#20491;-data.frame-&#30340;&#27396;">&#182;</a></h2>
+<h2 id="paste()-&#33287;-paste0()"><code>paste()</code> &#33287; <code>paste0()</code><a class="anchor-link" href="#paste()-&#33287;-paste0()">&#182;</a></h2><p>連接文字。</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">ncol</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">))</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">[,</span> <span class="n">i</span><span class="p">])</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Avengers:&quot;</span><span class="p">,</span> <span class="s">&quot;Endgame&quot;</span><span class="p">)</span>
+<span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Avengers:&quot;</span><span class="p">,</span> <span class="s">&quot;Endgame&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13730,14 +14402,23 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] &#34;The Avengers&#34;            &#34;Avengers: Age of Ultron&#34;
-[3] &#34;Avengers: Infinity War&#34;  &#34;Avengers: Endgame&#34;      
-[1] 8.0 7.3 8.4 8.4
-[1] 2012 2015 2018 2019
-[1]  TRUE FALSE  TRUE  TRUE
-</pre>
+
+<div class="output_html rendered_html output_subarea ">
+'Avengers: Endgame'
 </div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'Avengers:Endgame'
+</div>
+
 </div>
 
 </div>
@@ -13747,9 +14428,367 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#25152;&#26377;&#30340;-for-&#37117;&#21487;&#20197;&#29992;-while-&#37325;&#29694;&#65292;&#20294;&#21453;&#20043;&#19981;&#28982;">&#25152;&#26377;&#30340; <code>for</code> &#37117;&#21487;&#20197;&#29992; <code>while</code> &#37325;&#29694;&#65292;&#20294;&#21453;&#20043;&#19981;&#28982;<a class="anchor-link" href="#&#25152;&#26377;&#30340;-for-&#37117;&#21487;&#20197;&#29992;-while-&#37325;&#29694;&#65292;&#20294;&#21453;&#20043;&#19981;&#28982;">&#182;</a></h2><ul>
-<li>確定重複運行次數的情境：採用 <code>for</code></li>
-<li>不確定重複運行次數的情境：採用 <code>while</code></li>
+<h2 id="trimws()"><code>trimws()</code><a class="anchor-link" href="#trimws()">&#182;</a></h2><p>消除前（leading）或後（trailing）的空白。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">luke</span> <span class="o">&lt;-</span> <span class="s">&quot;     Luke, use the Force!     &quot;</span>
+<span class="nf">trimws</span><span class="p">(</span><span class="n">luke</span><span class="p">)</span>
+<span class="nf">trimws</span><span class="p">(</span><span class="n">luke</span><span class="p">,</span> <span class="n">which</span> <span class="o">=</span> <span class="s">&quot;left&quot;</span><span class="p">)</span>
+<span class="nf">trimws</span><span class="p">(</span><span class="n">luke</span><span class="p">,</span> <span class="n">which</span> <span class="o">=</span> <span class="s">&quot;right&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'Luke, use the Force!'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<span style=white-space:pre-wrap>'Luke, use the Force!     '</span>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<span style=white-space:pre-wrap>'     Luke, use the Force!'</span>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#33258;&#35330;&#20989;&#24335;&#30340;&#36664;&#20837;&#33287;&#36664;&#20986;&#20491;&#25976;">&#33258;&#35330;&#20989;&#24335;&#30340;&#36664;&#20837;&#33287;&#36664;&#20986;&#20491;&#25976;<a class="anchor-link" href="#&#33258;&#35330;&#20989;&#24335;&#30340;&#36664;&#20837;&#33287;&#36664;&#20986;&#20491;&#25976;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21934;&#19968;&#36664;&#20837;">&#21934;&#19968;&#36664;&#20837;<a class="anchor-link" href="#&#21934;&#19968;&#36664;&#20837;">&#182;</a></h2><p>將攝氏溫度轉換為華氏溫度的函式 <code>celsius_to_fahrenheit()</code></p>
+\begin{equation}
+Fahrenheit_{(°F)} = Celsius_{(°C)} \times \frac{9}{5} + 32
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">celsius_to_fahrenheit</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">return</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="m">9</span><span class="o">/</span><span class="m">5</span> <span class="o">+</span> <span class="m">32</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">celsius_to_fahrenheit</span><span class="p">(</span><span class="m">20</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+68
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20841;&#20491;&#20197;&#19978;&#36664;&#20837;">&#20841;&#20491;&#20197;&#19978;&#36664;&#20837;<a class="anchor-link" href="#&#20841;&#20491;&#20197;&#19978;&#36664;&#20837;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">get_bmi</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">weight</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">return</span><span class="p">(</span><span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span><span class="o">*</span><span class="m">0.01</span><span class="p">)</span><span class="o">**</span><span class="m">2</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">get_bmi</span><span class="p">(</span><span class="m">216</span><span class="p">,</span> <span class="m">147</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+31.5072016460905
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21443;&#25976;&#26377;&#38928;&#35373;&#20540;">&#21443;&#25976;&#26377;&#38928;&#35373;&#20540;<a class="anchor-link" href="#&#21443;&#25976;&#26377;&#38928;&#35373;&#20540;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">temperature_convert</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">to_fahrenheit</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">to_fahrenheit</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">return</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="m">9</span><span class="o">/</span><span class="m">5</span> <span class="o">+</span> <span class="m">32</span><span class="p">)</span>
+    <span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
+        <span class="nf">return</span><span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="m">32</span><span class="p">)</span><span class="o">*</span><span class="m">5</span><span class="o">/</span><span class="m">9</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nf">temperature_convert</span><span class="p">(</span><span class="m">20</span><span class="p">)</span>
+<span class="nf">temperature_convert</span><span class="p">(</span><span class="m">68</span><span class="p">,</span> <span class="n">to_fahrenheit</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+68
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+20
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#22810;&#20491;&#36664;&#20986;">&#22810;&#20491;&#36664;&#20986;<a class="anchor-link" href="#&#22810;&#20491;&#36664;&#20986;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">get_bmi_and_label</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">weight</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">bmi</span> <span class="o">&lt;-</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span><span class="o">/</span><span class="m">100</span><span class="p">)</span><span class="o">**</span><span class="m">2</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">bmi</span> <span class="o">&gt;</span> <span class="m">30</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">label</span> <span class="o">&lt;-</span> <span class="s">&quot;Obese&quot;</span>
+    <span class="p">}</span> <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">bmi</span> <span class="o">&lt;</span> <span class="m">18.5</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">label</span> <span class="o">&lt;-</span> <span class="s">&quot;Underweight&quot;</span>
+    <span class="p">}</span> <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">bmi</span> <span class="o">&gt;</span> <span class="m">25</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">label</span> <span class="o">&lt;-</span> <span class="s">&quot;Overweight&quot;</span>
+    <span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
+        <span class="n">label</span> <span class="o">&lt;-</span> <span class="s">&quot;Normal weight&quot;</span>
+    <span class="p">}</span>
+    <span class="n">bmi_and_label</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span>
+        <span class="n">bmi</span> <span class="o">=</span> <span class="n">bmi</span><span class="p">,</span>
+        <span class="n">bmi_label</span> <span class="o">=</span> <span class="n">label</span>
+    <span class="p">)</span>
+    <span class="nf">return</span><span class="p">(</span><span class="n">bmi_and_label</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">get_bmi_and_label</span><span class="p">(</span><span class="m">216</span><span class="p">,</span> <span class="m">147</span><span class="p">)</span> <span class="c1"># Shaquille O&#39;Neal</span>
+<span class="nf">get_bmi_and_label</span><span class="p">(</span><span class="m">203</span><span class="p">,</span> <span class="m">113</span><span class="p">)</span> <span class="c1"># LeBron James</span>
+<span class="nf">get_bmi_and_label</span><span class="p">(</span><span class="m">191</span><span class="p">,</span> <span class="m">82</span><span class="p">)</span> <span class="c1"># Steve Nash</span>
+<span class="nf">get_bmi_and_label</span><span class="p">(</span><span class="m">231</span><span class="p">,</span> <span class="m">91</span><span class="p">)</span> <span class="c1"># Manute Bol</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl>
+	<dt>$bmi</dt>
+		<dd>31.5072016460905</dd>
+	<dt>$bmi_label</dt>
+		<dd>'Obese'</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl>
+	<dt>$bmi</dt>
+		<dd>27.4211943992817</dd>
+	<dt>$bmi_label</dt>
+		<dd>'Overweight'</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl>
+	<dt>$bmi</dt>
+		<dd>22.4774540171596</dd>
+	<dt>$bmi_label</dt>
+		<dd>'Normal weight'</dd>
+</dl>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl>
+	<dt>$bmi</dt>
+		<dd>17.0536534172898</dd>
+	<dt>$bmi_label</dt>
+		<dd>'Underweight'</dd>
+</dl>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20840;&#22495;&#65288;Global&#65289;&#33287;&#21312;&#22495;&#65288;Local&#65289;">&#20840;&#22495;&#65288;Global&#65289;&#33287;&#21312;&#22495;&#65288;Local&#65289;<a class="anchor-link" href="#&#20840;&#22495;&#65288;Global&#65289;&#33287;&#21312;&#22495;&#65288;Local&#65289;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20160;&#40636;&#26159;&#20840;&#22495;&#33287;&#21312;&#22495;&#65311;">&#20160;&#40636;&#26159;&#20840;&#22495;&#33287;&#21312;&#22495;&#65311;<a class="anchor-link" href="#&#20160;&#40636;&#26159;&#20840;&#22495;&#33287;&#21312;&#22495;&#65311;">&#182;</a></h2><ul>
+<li>在函式的大括號（Block）以外所建立的物件屬於全域</li>
+<li>在函式的大括號（Block）以內所建立的物件屬於區域</li>
 </ul>
 
 </div>
@@ -13758,13 +14797,555 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#19981;&#30906;&#23450;&#37325;&#35079;&#36939;&#34892;&#27425;&#25976;&#30340;&#24773;&#22659;&#65292;&#21253;&#21547;">&#19981;&#30906;&#23450;&#37325;&#35079;&#36939;&#34892;&#27425;&#25976;&#30340;&#24773;&#22659;&#65292;&#21253;&#21547;<a class="anchor-link" href="#&#19981;&#30906;&#23450;&#37325;&#35079;&#36939;&#34892;&#27425;&#25976;&#30340;&#24773;&#22659;&#65292;&#21253;&#21547;">&#182;</a></h2><ul>
-<li>不確定性（Uncertainty）</li>
-<li>隨機性（Randomness）</li>
+<h2 id="&#20840;&#22495;&#33287;&#21312;&#22495;&#30340;&#24046;&#21029;&#65311;">&#20840;&#22495;&#33287;&#21312;&#22495;&#30340;&#24046;&#21029;&#65311;<a class="anchor-link" href="#&#20840;&#22495;&#33287;&#21312;&#22495;&#30340;&#24046;&#21029;&#65311;">&#182;</a></h2><ul>
+<li>區域物件<strong>僅可</strong>在區域中使用</li>
+<li>全域物件可以在全域以及區域中使用</li>
 </ul>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1"># 區域物件僅可在區域中使用</span>
+<span class="n">sum_and_square</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">summation</span> <span class="o">&lt;-</span> <span class="nf">sum</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">square_summation</span> <span class="o">&lt;-</span> <span class="n">summation</span><span class="o">**</span><span class="m">2</span>
+    <span class="nf">return</span><span class="p">(</span><span class="n">square_summation</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nf">sum_and_square</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span> <span class="m">6</span><span class="p">))</span>
+<span class="n">summation</span>        <span class="c1"># Local object cannot be accessed in global</span>
+<span class="n">square_summation</span> <span class="c1"># Local object cannot be accessed in global</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+121
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+Error in eval(expr, envir, enclos): object &#39;summation&#39; not found
+Traceback:
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1"># 全域物件可以在全域以及區域中使用</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span> <span class="m">6</span><span class="p">)</span>
+<span class="n">summation</span> <span class="o">&lt;-</span> <span class="nf">sum</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">sum_and_square</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">square_summation</span> <span class="o">&lt;-</span> <span class="n">summation</span><span class="o">**</span><span class="m">2</span>
+    <span class="nf">return</span><span class="p">(</span><span class="n">square_summation</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nf">sum_and_square</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+121
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21521;&#37327;&#21270;&#20989;&#24335;">&#21521;&#37327;&#21270;&#20989;&#24335;<a class="anchor-link" href="#&#21521;&#37327;&#21270;&#20989;&#24335;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20160;&#40636;&#26159;&#21521;&#37327;&#21270;&#20989;&#24335;&#65311;">&#20160;&#40636;&#26159;&#21521;&#37327;&#21270;&#20989;&#24335;&#65311;<a class="anchor-link" href="#&#20160;&#40636;&#26159;&#21521;&#37327;&#21270;&#20989;&#24335;&#65311;">&#182;</a></h2><p>利用函式型函式（Functional functions）將指定函式<strong>向量化</strong>至某個資料結構的技巧。</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1"># 將一個 list 中的每個數字都平方</span>
+<span class="n">my_list</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span>
+    <span class="m">11</span><span class="p">,</span>
+    <span class="m">12</span><span class="p">,</span>
+    <span class="m">13</span><span class="p">,</span>
+    <span class="m">14</span><span class="p">,</span>
+    <span class="m">15</span>
+<span class="p">)</span>
+<span class="n">my_list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol>
+	<li>11</li>
+	<li>12</li>
+	<li>13</li>
+	<li>14</li>
+	<li>15</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#32769;&#23526;&#35498;&#65292;&#25105;&#20497;&#26371;&#26377;&#20491;&#34909;&#21205;&#36889;&#27171;&#23531;">&#32769;&#23526;&#35498;&#65292;&#25105;&#20497;&#26371;&#26377;&#20491;&#34909;&#21205;&#36889;&#27171;&#23531;<a class="anchor-link" href="#&#32769;&#23526;&#35498;&#65292;&#25105;&#20497;&#26371;&#26377;&#20491;&#34909;&#21205;&#36889;&#27171;&#23531;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">my_list</span><span class="o">**</span><span class="m">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+Error in my_list^2: non-numeric argument to binary operator
+Traceback:
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#27880;&#24847;&#36889;&#26159;&#19968;&#20491;-list-&#32780;&#19981;&#26159;&#21521;&#37327;">&#27880;&#24847;&#36889;&#26159;&#19968;&#20491; <code>list</code> &#32780;&#19981;&#26159;&#21521;&#37327;<a class="anchor-link" href="#&#27880;&#24847;&#36889;&#26159;&#19968;&#20491;-list-&#32780;&#19981;&#26159;&#21521;&#37327;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">my_list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="m">2</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] 121
+[1] 144
+[1] 169
+[1] 196
+[1] 225
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;-lapply()-&#20989;&#24335;&#23559;-get_squared()-&#20989;&#24335;&#21521;&#37327;&#21270;&#33267;-my_list-&#20043;&#19978;">&#20351;&#29992; <code>lapply()</code> &#20989;&#24335;&#23559; <code>get_squared()</code> &#20989;&#24335;&#21521;&#37327;&#21270;&#33267; <code>my_list</code> &#20043;&#19978;<a class="anchor-link" href="#&#20351;&#29992;-lapply()-&#20989;&#24335;&#23559;-get_squared()-&#20989;&#24335;&#21521;&#37327;&#21270;&#33267;-my_list-&#20043;&#19978;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">get_squared</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">return</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="m">2</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nf">lapply</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="n">get_squared</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol>
+	<li>121</li>
+	<li>144</li>
+	<li>169</li>
+	<li>196</li>
+	<li>225</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#25645;&#37197;&#21311;&#21517;&#20989;&#24335;&#65288;Anonymous-functions&#65289;&#23559;&#24179;&#26041;&#36939;&#31639;&#21521;&#37327;&#21270;&#33267;-my_list-&#20043;&#19978;">&#25645;&#37197;&#21311;&#21517;&#20989;&#24335;&#65288;Anonymous functions&#65289;&#23559;&#24179;&#26041;&#36939;&#31639;&#21521;&#37327;&#21270;&#33267; <code>my_list</code> &#20043;&#19978;<a class="anchor-link" href="#&#25645;&#37197;&#21311;&#21517;&#20989;&#24335;&#65288;Anonymous-functions&#65289;&#23559;&#24179;&#26041;&#36939;&#31639;&#21521;&#37327;&#21270;&#33267;-my_list-&#20043;&#19978;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># Named function</span>
+<span class="n">named_function</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">INPUTS</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1"># sequence of statements</span>
+    <span class="c1"># sequence of statements</span>
+    <span class="nf">return</span><span class="p">(</span><span class="n">OUTPUTS</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1"># Anonymous function</span>
+<span class="nf">function</span><span class="p">(</span><span class="n">INPUTS</span><span class="p">)</span> <span class="nf">return</span><span class="p">(</span><span class="n">OUTPUTS</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">lapply</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="nf">return</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="m">2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<ol>
+	<li>121</li>
+	<li>144</li>
+	<li>169</li>
+	<li>196</li>
+	<li>225</li>
+</ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="R-&#24120;&#29992;&#30340;&#20989;&#24335;&#22411;&#20989;&#24335;&#65288;Functional-functions&#65289;">R &#24120;&#29992;&#30340;&#20989;&#24335;&#22411;&#20989;&#24335;&#65288;Functional functions&#65289;<a class="anchor-link" href="#R-&#24120;&#29992;&#30340;&#20989;&#24335;&#22411;&#20989;&#24335;&#65288;Functional-functions&#65289;">&#182;</a></h2><ul>
+<li><code>lapply()</code></li>
+<li><code>sapply()</code></li>
+<li><code>apply()</code></li>
+<li><code>mapply()</code></li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="sapply()"><code>sapply()</code><a class="anchor-link" href="#sapply()">&#182;</a></h2><ul>
+<li>Simplified apply</li>
+<li>回傳向量而非 <code>list</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">sapply</span><span class="p">(</span><span class="n">my_list</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="nf">return</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="m">2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>121</li><li>144</li><li>169</li><li>196</li><li>225</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="apply()"><code>apply()</code><a class="anchor-link" href="#apply()">&#182;</a></h2><p>將函數向量化至二維的資料結構（<code>matrix</code> 與 <code>data.frame</code>）</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">my_matrix</span> <span class="o">&lt;-</span> <span class="nf">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">,</span> <span class="n">nrow</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+<span class="n">my_matrix</span>
+<span class="nf">apply</span><span class="p">(</span><span class="n">my_matrix</span><span class="p">,</span> <span class="n">MARGIN</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="n">sum</span><span class="p">)</span>
+<span class="nf">apply</span><span class="p">(</span><span class="n">my_matrix</span><span class="p">,</span> <span class="n">MARGIN</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">FUN</span> <span class="o">=</span> <span class="n">sum</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<caption>A matrix: 2 × 6 of type int</caption>
+<tbody>
+	<tr><td>1</td><td>3</td><td>5</td><td>7</td><td> 9</td><td>11</td></tr>
+	<tr><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>36</li><li>42</li></ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>3</li><li>7</li><li>11</li><li>15</li><li>19</li><li>23</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="mapply()"><code>mapply()</code><a class="anchor-link" href="#mapply()">&#182;</a></h2><p>將具有多個輸入的函數向量化</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">weights</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span><span class="m">91</span><span class="p">,</span> <span class="m">82</span><span class="p">,</span> <span class="m">113</span><span class="p">,</span> <span class="m">147</span><span class="p">)</span>
+<span class="n">heights</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span><span class="m">231</span><span class="p">,</span> <span class="m">191</span><span class="p">,</span> <span class="m">203</span><span class="p">,</span> <span class="m">216</span><span class="p">)</span>
+<span class="n">bmis</span> <span class="o">&lt;-</span> <span class="nf">mapply</span><span class="p">(</span><span class="n">FUN</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="nf">return</span><span class="p">(</span><span class="n">w</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="m">0.01</span><span class="p">)</span><span class="o">**</span><span class="m">2</span><span class="p">),</span> <span class="n">heights</span><span class="p">,</span> <span class="n">weights</span><span class="p">)</span>
+<span class="n">bmis</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>17.0536534172898</li><li>22.4774540171596</li><li>27.4211943992817</li><li>31.5072016460905</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></section></section>
 </div>
 </div>

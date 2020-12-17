@@ -1,2 +1,2 @@
-# chapter-defining-functions-with-r
-Chapter: Defining functions with R.
+# chapter-importing-data-with-r
+Chapter: Importing data with R.
